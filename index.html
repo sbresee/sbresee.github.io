@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sarah Bresee</title>
+<meta name="viewport" content="width==device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="header">
+			<h1>CIS 128 Mobile Web App Development</h1>
+		</div>
+		<div id="navbar">
+		<a class="active" href="#header">Home</a>
+		<a href="#about">About Me</a>
+		<a href="#technologies">Skills</a>
+  		<a href="#resources">Resources</a>
+	</div>
+	</header>
+	<main>
+		<div class="content">
+			<div id="about">
+				<img src="img/profile.jpg" alt="profile">
+				<p id="first">My name is Sarah. I've been taking classes at CSM for a year now. I have a degree in Geography from San Francisco State. I have worked as a Geographic Information Specialist for numerous years. I am a mother of three, ages 12, 4 and 4. My hobbies are fitness, nutrition and reading although lately I've been playing a lot of legos.</p>
+				<p id="second">I am currently a stay at home mom working on a second career as a web developer and designer. I enjoy the course work and fiddling with code, sometimes to the point of frustration. Given the time I have, I would like to learn as much as possible, including mobile and back-end development.</p>
+			</div>
+			<div id="technologies">
+				<h2>Technologies For This Class</h2>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+				</ul>
+			</div>
+			<div id="resources">
+				<h2>Resources</h2>
+				<ul>
+					<li><p><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN web docs</a> is a resource for web developers created by developers and technical writers. The site includes documents and tutorials on development subjects such as HTML5, CSS, JavaScript, Node.js and more.</p></li>
+					<li><p><a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a> offers tutorials, references, examples and exercises designed to increase your knowledge of HTML, CSS, JavaScript, server side languages and web building, including templates and statistics</p></li>
+					<li><p><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> offers tricks and tips for taking CSS to the next level. The site includes articles on new techniques, videos, tutorials and comprehensive guides on all things CSS.</p></li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script> 
+</body>
+</html>
