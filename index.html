@@ -1,67 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Sarah Bresee</title>
-<meta name="viewport" content="width==device-width, initial-scale=1">
-<meta name="description" content="Sarah Bresee's CIS 128 Mobile web app development site">
-<link rel="stylesheet" href="main.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-<script scr="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="main.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Wild Life</title>
 </head>
+
 <body>
-	<header>
-		<div id="title">
-			<h1>CIS 128 Mobile Web App Development</h1>
+	<div class="header-container">
+    <div id="header">
+        <h1>Welcome to Wildlife for Life</h1>
+        <h2>We fight for life</h2>
+        
+        <ul class="navigation">
+            <li><a href="index.html" title="home">Home</a></li>
+            <li><a href="#" title="contact">Contact Us</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="content">
+    
+    <div class="col-right">
+        
+		<div class="first">
+        <h1>The Wild Life is great</h1><br />
+        <p>Wild Life includes all non-domesticated plants, animals and other organisms.</p>
+        <p>Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife.</p><br />
+        </div>
+		
+        <h3>Destruction</h3><br />
+		<div class="second">
+        <img src="images/img1.jpg" class="float-left" width="200" height="150" alt="alternative text.  This text is for screen readers or in the instance an image can't load, a description of what should have been here." />
+			<div class="second-text"><p>Exploitation of wild populations has been a characteristic of modern man since our exodus from Africa 130,000 – 70,000 years ago. The rate of extinctions of entire species of plants and animals across the planet has been so high in the last few hundred years it is widely believed that we are in the sixth great extinction event on this planet</p><br /></div>
+        </div>
+		
+		<div class="third">
+        <h3 class="clear">Food, pets, and traditional medicines</h3><br />
+        <p>Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
+    	</div>
 		</div>
-		<nav id="navbar">
-		<a class="active" href="#header">Home</a>
-		<a href="#about">About Me</a>
-		<a href="#technologies">Skills</a>
-  		<a href="#resources">Resources</a>
-	</nav>
-	</header>
-	<main>
-		<section class="content">
-			<article id="about">
-				<img id= "profile" src="profile.jpg" alt="profile">
-				<p id="first">My name is Sarah. I've been taking classes at CSM for a year now. I have a degree in Geography from San Francisco State. I have worked as a Geographic Information Specialist for numerous years. I am a mother of three, ages 12, 4 and 4. My hobbies are fitness, nutrition and reading although lately I've been playing a lot of legos.</p>
-				<p id="second">I am currently a stay at home mom working on a second career as a web developer and designer. I enjoy the course work and fiddling with code, sometimes to the point of frustration. Given the time I have, I would like to learn as much as possible, including mobile and back-end development.</p>
-			</article>
-			<article id="technologies">
-				<h2>Technologies For This Class</h2>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-				</ul>
-			</article>
-			<article id="resources">
-				<h2>Resources</h2>
-				<ul>
-					<li><p><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN web docs</a> is a resource for web developers created by developers and technical writers. The site includes documents and tutorials on development subjects such as HTML5, CSS, JavaScript, Node.js and more.</p></li>
-					<li><p><a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a> offers tutorials, references, examples and exercises designed to increase your knowledge of HTML, CSS, JavaScript, server side languages and web building, including templates and statistics</p></li>
-					<li><p><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> offers tricks and tips for taking CSS to the next level. The site includes articles on new techniques, videos, tutorials and comprehensive guides on all things CSS.</p></li>
-				</ul>
-			</article>
-			<button id="button">Animate</button>
-		</section>
-	</main>
-	<!--<script>
-		window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-	</script> -->
+    
+    <div class="sidebar-left">
+    	<h3>Favorite links</h3>
+    	<ul class="list">
+        	<li><a href="http://wildlife-museum.org/" title="Lindsay Wildlife Museum">Lindsay Wildlife Museum</a></li>
+            <li><a href="http://www.worldwildlife.org/home-full.html" title="WWF">WWF</a></li>
+        </ul>
+        
+        <h3>News</h3>
+        <p>Aug/2012 - About forty Blue whales have been sighted swimming in waters 15 miles west of La Jolla.</p>
+        <p>Aug/2012 - Three tigers have been found dead in India in the last week. The carcass of a ten year old tigress was found in Kanha Tiger Reserve, and another female tiger was found in a very poor state of health in the same reserve. Unfortunately vets could not save her.</p>
+    </div>
+    <br class="clear" />  <!-- this code is clearing the floats from the above divs.  See what happens when you take it away to really learn what clear does... -->
+    </div>
+    <div id="footer">
+        <p>We believe that we can all live together in Planet Earth</p>
+    </div>
 </body>
 </html>
