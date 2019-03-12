@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+<title>desktop</title>
+</head>
+<body>
+	<script>
+if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+    // targetSmartPhoneDevices();
+}</script>
+<h1>Desktop</h1>
+	<p>This is the desktop version of my web page!</p>
+	<p>WURFL Capabilities</p>
+		<dl>
+			<dt><strong>is_mobile</strong></dt>
+				<dd>Virtual capability that is true if a device is wireless, specifically a mobile phone or tablet; alias for is_wireless_device.</dd><br>
+			<dt><strong>can_assign_phone_number</strong></dt>
+				<dd>Static capability that is true if a device is a mobile phone and may have a phone number associated to it.</dd><br>
+			<dt><strong>gps</strong></dt>
+				<dd>Static capability that returns true if the device has a sensor to determine location using satellites.</dd>
+		</dl>
+
+</body>
+</html>
