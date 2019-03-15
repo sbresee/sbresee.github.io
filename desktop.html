@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
 <title>desktop</title>
+<script>
+	if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+    	window.location.href="mobile.html";
+	};
+</script>
 </head>
 <body>
-	<script>
-if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
-    // targetSmartPhoneDevices();
-}</script>
+	
 <h1>Desktop</h1>
 	<p>This is the desktop version of my web page!</p>
 	<p>WURFL Capabilities</p>
