@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+
+
+footer {
+	padding-left: .75em;
+}
+
+.ui-icon-myicon:after {
+	background-image: url("fb-icon.png");
+	background-size: 22px 22px;
+}
+

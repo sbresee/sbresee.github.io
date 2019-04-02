@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>ABC Toys</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<section id="home" data-role="page">
+		<header data-role="header" data-position="fixed">
+		<h1>ABC Toys</h1>
+		<h3>Making learning fun</h3>
+  		</header>
+		<div data-role="content">
+		<p>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
+		<p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
+		<p>By the way, parents love our toys too</p>
+		</div>
+		<footer data-role="footer">
+			<a href="#home" class="ui-btn ui-corner-all custom-btn">Home</a>
+			<a href="#contact" class="ui-btn ui-corner-all custom-btn">Contact Us</a>
+			<a href="#products" class="ui-btn ui-corner-all custom-btn">Products</a>
+			<a href="#location" class="ui-btn ui-btn-corner-all custom-btn">Locations</a>
+		</footer>
+	</section>
+	<div id="contact" data-role="page">
+		<header data-role="header">
+			<h1>ABC Toys</h1>
+			<h3>Contact Us</h3>
+		</header>
+		<div data-role="content">
+		<form method="get" action="#">
+			<div class="ui-field-contain">
+				<h3>ABC Toys</h3>
+				<p>1234 Main St<br>
+					Anywhere, Ca 12345
+				</p>
+				
+				<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<a href="#" class="ui-btn ui-btn-icon-left ui-icon-mail ui-btn-c">Email</a>
+					<a href="#" class="ui-btn ui-btn-icon-left ui-icon-phone ui-btn-c">Phone</a>
+					<a href="https://facebook.com" class="ui-btn ui-btn-icon-left ui-icon-myicon ui-btn-c">Facebook</a>
+				</div>
+			</div>
+			<fieldset class="ui-field-contain">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" value="" placeholder="First and Last Name"/>
+				<label for="email">Email: </label>
+			    <input type="email" name="email" id="email" value="" placeholder="Your Email"/>
+				<label for="comment">Comments</label>
+            	<textarea id="comment"></textarea>
+				<label for="submit"></label>
+				<input type="button" name="submit" id="submit" value="Submit"/>
+			</fieldset>
+			</form>	
+		</div>
+		<footer data-role="footer">
+			<a href="#home" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Home</a>
+			<a href="#contact" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Contact Us</a>
+			<a href="#product" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Products</a>
+			<a href="#location" class="ui-btn ui-btn-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Locations</a>
+		</footer>
+	</div>
+	<div id="product" data-role="page">
+		<header data-role="header">
+			<h1>ABC Toys</h1>
+			<h3>Products</h3>
+		</header>
+			<div data-role="content">
+				<div data-role="collapsible" id="toys">
+					<h3>Our Toys</h3>
+					<div data-role="collapsible" id="toy1" data-theme="c" data-content-theme="c" data-collapsed-icon="info">
+					<h3>Dinosaurs</h3>
+						<img src="dinosaur.png" alt="dinosaur">
+						<p>We offer a wide variety of dinosaurs, including T. Rex, Stegosaurs and Velociraptors.</p>
+					</div>
+					<div data-role="collapsible" id="toy2" data-theme="c" data-content-theme="c" data-collapsed-icon="info">
+					<h3>Hot Wheels</h3>
+						<img src="hotwheel.png" alt="hot wheel car">
+						<p>We have Hot Wheel cars, tracks and accessories to suit all of your racing needs.</p>
+					</div>
+					<div data-role="collapsible" id="toy3" data-theme="c" data-content-theme="c" data-collapsed-icon="info">
+					<h3>Play Doh</h3>
+						<img src="playdoh.png" alt="play doh">
+						<p>If Play Doh makes it, we have it! From kitchen sets to animal creations, you'll find it here!</p>
+					</div>
+					<div data-role="collapsible" id="toy4" data-theme="c" data-content-theme="c" data-collapsed-icon="info">
+					<h3>Sports Equipment</h3>
+						<img src="sports.png" alt="sports equipment">
+						<p>All of your sports needs can be found here! Indoor or outdoors, we've got you covered!</p>
+					</div>
+					<div data-role="collapsible" id="toy5" data-theme="c" data-content-theme="c" data-collapsed-icon="info">
+					<h3>Bikes</h3>
+						<img src="bike.png" alt="bicycle">
+						<p>Get out and ride! We've got bikes of all shapes and sizes.</p>
+					</div>
+				</div>
+				<footer data-role="footer">
+					<a href="#home" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Home</a>
+					<a href="#contact" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Contact Us</a>
+					<a href="#product" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Products</a>
+					<a href="#location" class="ui-btn ui-btn-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Locations</a>
+			</footer>
+		</div>
+	</div>
+	<div id="location" data-role="page">
+		<header data-role="header">
+			<h1>ABC Toys</h1>
+			<h3>Locations</h3>
+		</header>
+		<div data-role="content">
+			<p>When we open our store, we will let you know our location here even with directions from your place to it!!!</p>
+		</div>
+		<footer data-role="footer">
+			<a href="#home" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Home</a>
+			<a href="#contact" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Contact Us</a>
+			<a href="#product" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Products</a>
+			<a href="#location" class="ui-btn ui-btn-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Locations</a>
+		</footer>
+	</div>
+</body>
+
+</html>
