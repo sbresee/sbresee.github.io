@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body {
+	width: 1000px;
+	align-content: center;
+	padding-left: 100px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
