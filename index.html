@@ -7,6 +7,16 @@
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  	crossorigin=""/>
+	<style>
+	      body { margin: 0; padding: 0; }
+	      html, body, #demomap { height: 100%; width: 100vw; }
+	   </style>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  	crossorigin=""></script>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -114,6 +124,9 @@
 		</header>
 		<div data-role="content">
 			<p>When we open our store, we will let you know our location here even with directions from your place to it!!!</p>
+			<p id="user-location"><button onclick="getLocation()">Get Your Location</button></p>
+		<div id="map"></div>
+			
 		</div>
 		<footer data-role="footer" data-position="fixed">
 			<a href="#home" class="ui-btn ui-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Home</a>
@@ -122,6 +135,24 @@
 			<a href="#location" class="ui-btn ui-btn-corner-all custom-btn" data-position="fixed" data-fullscreen="true">Stores</a>
 		</footer>
 	</div>
+	<script>
+var x = document.getElementById("user-location");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+</script>
+
 </body>
 
 </html>
